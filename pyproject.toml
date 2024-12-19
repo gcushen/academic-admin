@@ -51,3 +51,10 @@ include = ["academic"]
 [tool.pytest.ini_options]
 # Ignore warning from Jupyter package: `DeprecationWarning: Jupyter is migrating its paths to use standard platformdirs`
 filterwarnings =['ignore::DeprecationWarning']
+
+[tool.codespell]
+# Ref: https://github.com/codespell-project/codespell#using-a-config-file
+skip = '.git*,*.lock'
+check-hidden = true
+ignore-regex = '^\s*"image/\S+": ".*'
+# ignore-words-list = ''
